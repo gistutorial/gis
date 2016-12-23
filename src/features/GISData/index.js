@@ -23,7 +23,7 @@ export default () => (
       <div className="row">
         <div className="col-xs-12 col-sm-8">
           <section>
-            <h2 className="display-4">Data acquisition with USGS</h2>
+            <h2 className="display-5">Data acquisition with USGS</h2>
             <h3><small className="text-muted">Getting Started</small></h3>
             <p>Earth Observation images can be acquired from an online data server
               such as Glovis or Earth Explorer on the
@@ -77,7 +77,7 @@ export default () => (
           </section>
 
           <section>
-            <h2 className="display-4">Band Designation</h2>
+            <h2 className="display-5">Band Designation</h2>
             <h3><small className="text-muted">LANDSAT 1-3 & 4-5, Multispectral Scanner (MSS)</small></h3>
             <table className="table">
               <thead className="thead-inverse">
@@ -302,7 +302,7 @@ export default () => (
           </section>
 
           <section>
-            <h2 className="display-4">Band Combination: <small className="text-muted">Landsat TM</small></h2>
+            <h2 className="display-5">Band Combination: <small className="text-muted">Landsat TM</small></h2>
             <h3><small className="text-muted">Getting Started</small></h3>
             <p>
               Combination of bands in RGB is beneficial in many ways and allows

@@ -12,14 +12,14 @@ export default () => (
   <div>
     <header className="jumbotron text-xs-center banner">
       <div className="container">
-        <h1 className="jumbotron-heading">TOA Atmospheric Correction</h1>
+        <h1 className="display-3">TOA Atmospheric Correction</h1>
       </div>
     </header>
     <div className="container">
       <div className="row">
         <div className="col-xs-12 col-sm-8">
           <section>
-            <h2 className="display-4">Intro</h2>
+            <h2 className="display-5">Intro</h2>
             <p>
               Atmospheric correction techniques allows for the transformation
               of Digital Numbers (DN) to Radiance and then to Reflectance
@@ -36,7 +36,7 @@ export default () => (
               Another great source is the USGS Landsat 7 handbook guide, available
               here or the USGS Landsat 8 handbook guide, <a href="https://landsat.usgs.gov/documents/Landsat8DataUsersHandbook.pdf">available here.</a>
             </p>
-            <h2 className="display-4">LANDSAT 4-5 TM & 7 ETM+</h2>
+            <h2 className="display-5">LANDSAT 4-5 TM & 7 ETM+</h2>
             <p className="lead"><strong>Digital Numbers To Radiance</strong></p>
             <p>Lλ = ((Lmaxλ - Lminλ)/(Qcalmax - Qcalmin)) * (Qcal - Qcalmin) + Lminλ</p>
             <p>Lλ = Spectral Radiance in watts/(meter squared * ster * μm) </p>
@@ -126,7 +126,7 @@ export default () => (
             <p>For the L value, replace it with the radiance raster file you obtained from the first step "DN to Radiance" for each band. See below for reference</p>
             <img src={l05} className="img-fluid" alt="" />
 
-            <h2 className="display-4">Landsat 8 OLI & TIRS</h2>
+            <h2 className="display-5">Landsat 8 OLI & TIRS</h2>
             <p>The TOA atmospheric correction for Landsat 8 imagery converts DN values to Radiance separately, although similar, to the conversion to Reflectance. Luckily, all of the values will be found in the metadata, making the process a lot less tedious compared to the older Landsat EO data. This method is based on the USGS correction method in the Landsat 8 Data User Handbook .</p>
             <img src={l08} className="img-fluid" alt="" />
             <p className="lead"><strong>DN to radiance (OLI/TIRS)</strong></p>
@@ -155,8 +155,8 @@ export default () => (
             <p>θ = Solar Elevation Angle (from metadata)</p>
 
             <p className="lead"><strong>Plug into Raster Calculator</strong></p>
-            <p>For each of the steps to calculate the Reflectance, plug all of the equations in for each band (except for the thermal bands 10 & 11). For step two, "pλ'" will be the raster files of reflectance values obtained in step 1.</p>
             <img src={l08_raster_ref} className="img-fluid" alt="" />
+            <p>For each of the steps to calculate the Reflectance, plug all of the equations in for each band (except for the thermal bands 10 & 11). For step two, "pλ'" will be the raster files of reflectance values obtained in step 1.</p>
           </section>
         </div>
         <div className="col-xs-12 col-sm-4">

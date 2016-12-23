@@ -58,7 +58,7 @@ export default () => (
               suggested after completing the atmospheric correction (converting
               DN to Radiance to Reflectance), with either the TOA or COST methods.
             </p>
-            <Link className="btn btn-info" to="/tutorials/GISData">LEARN MORE</Link>
+            <Link className="btn btn-info" to="/tutorials/cloud-masking">LEARN MORE</Link>
           </div>
           <div className="card card-block text-xs-center">
             <h4 className="card-title jumbotron-heading">Thermal Infrared Sensor (TIRS) Conversion</h4>
@@ -67,7 +67,7 @@ export default () => (
               should be converted to TOA spectral radiance in order to convert into
               brightness temperature in Kelvins (K) using the methods in this tutorial.
             </p>
-            <Link className="btn btn-info" to="/tutorials/GISData">LEARN MORE</Link>
+            <Link className="btn btn-info" to="/tutorials/thermal-band-conversion">LEARN MORE</Link>
           </div>
 
         </div>

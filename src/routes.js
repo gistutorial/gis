@@ -5,6 +5,8 @@ import Home from './features/Home/Home';
 import GISData from './features/GISData';
 import WhatIsGIS from './features/WhatIsGIS';
 import ToaAtmosphericCorrection from './features/ToaAtmosphericCorrection';
+import CloudMasking from './features/CloudMasking';
+import ThermalBand from './features/ThermalBand';
 
 export default(
   <Route path="/" component={App} >
@@ -12,5 +14,7 @@ export default(
     <Route path="tutorials/GISData" component={GISData} />
     <Route path="tutorials/what-is-gis" component={WhatIsGIS} />
     <Route path="tutorials/toa-atmospheric-correction" component={ToaAtmosphericCorrection} />
+    <Route path="tutorials/cloud-masking" component={CloudMasking} />
+    <Route path="tutorials/thermal-band-conversion" component={ThermalBand} />
   </Route>
 );

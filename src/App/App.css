@@ -129,3 +129,9 @@ footer p {
 .banner h1 {
   color: #fff;
 }
+
+.display-5 {
+  font-size: 3rem;
+  font-weight: 300;
+  padding-top: 0;  
+}

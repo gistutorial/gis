@@ -8,12 +8,13 @@ export default () => (
   <div>
     <header className="jumbotron text-xs-center banner">
       <div className="container">
-        <h1 className="jumbotron-heading">What is Geographical Information Systems (GIS)?</h1>
+        <h1 className="display-4">What is Geographical Information Systems (GIS)?</h1>
       </div>
     </header>
     <div className="container">
       <div className="row">
         <div className="col-xs-12 col-sm-8">
+          <h2 className="display-5">Geographical Information Systems</h2>
           <p>
             GIS is a technological tool widely used to spatially analyze data
             and events related to things such as: Human Health, Land Cover/ Land
@@ -39,7 +40,7 @@ export default () => (
           </blockquote>
 
           <div>
-            <p className="display-4">WAYS TO USE GIS</p>
+            <h2 className="display-5">Ways to use GIS</h2>
             <p>
               There are many ways to utilize GIS to solve complex real world issues.
               The over-arching themes that are predominantly found crucial in our
