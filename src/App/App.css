@@ -115,3 +115,17 @@ footer {
 footer p {
   margin-bottom: .25rem;
 }
+
+.banner{
+  color: #fff;
+  background-color: #F15A68;
+  border-radius: 0;
+}
+
+.banner p {
+  color: #fff;
+}
+
+.banner h1 {
+  color: #fff;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './App/App';
 import Home from './features/Home/Home';
-import GISData from './features/GISData/GISData';
+import GISData from './features/GISData';
 import WhatIsGIS from './features/WhatIsGIS';
 import ToaAtmosphericCorrection from './features/ToaAtmosphericCorrection';
 
