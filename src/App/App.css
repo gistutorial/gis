@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
+  color: #555;
 }
 
 
@@ -21,6 +22,14 @@ h1,
 h2,
 strong {
   color: #333;
+}
+
+a {
+  color: #F15A68;
+}
+
+a:hover {
+  color: #ea8f97;
 }
 
 code,
@@ -133,5 +142,27 @@ footer p {
 .display-5 {
   font-size: 3rem;
   font-weight: 300;
-  padding-top: 0;  
+  padding-top: 0;
+}
+
+.card-link+.card-link {
+  margin-left: 0;
+}
+
+.card-link:hover {
+  border-color: #F15A68;
+}
+
+.container-narrow {
+  max-width: 46rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Customize container */
+@media (min-width: 48em) {
+  .container-narrow {
+    max-width: 46rem;
+  }
 }

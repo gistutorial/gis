@@ -11,7 +11,7 @@ import ThermalBand from './features/ThermalBand';
 export default(
   <Route path="/" component={App} >
     <IndexRoute component={Home} />
-    <Route path="tutorials/GISData" component={GISData} />
+    <Route path="tutorials/data-acquisition-with-usgs" component={GISData} />
     <Route path="tutorials/what-is-gis" component={WhatIsGIS} />
     <Route path="tutorials/toa-atmospheric-correction" component={ToaAtmosphericCorrection} />
     <Route path="tutorials/cloud-masking" component={CloudMasking} />
