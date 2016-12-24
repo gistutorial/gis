@@ -68,6 +68,17 @@ export default () => (
         </div>
       </div>
     </section>
-
+    <section className="section-footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-xs">
+            <p><i className="fa fa-globe fa-5x" aria-hidden="true"></i></p>
+          </div>
+          <div className="col-xs">
+            <p>There are many ways to utilize GIS to solve complex real world issues. The over-arching themes that are predominantly found crucial in our current world and the ones that are focused here are: Human Health, Land Cover Change, Natural Disasters, and Environmental Conservation</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 );
