@@ -12,7 +12,7 @@ export default () => (
   <div>
     <header className="jumbotron text-xs-center banner">
       <div className="container">
-        <h1 className="display-3">TOA Atmospheric Correction</h1>
+        <h1 className="display-4">TOA Atmospheric Correction</h1>
       </div>
     </header>
     <div className="container-narrow">

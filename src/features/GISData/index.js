@@ -75,228 +75,248 @@ export default () => (
       </section>
 
       <section>
-        <h2 className="display-5">Band Designation</h2>
-        <h3><small className="text-muted">LANDSAT 1-3 & 4-5, Multispectral Scanner (MSS)</small></h3>
-        <table className="table">
-          <thead className="thead-inverse">
-            <tr>
-              <th>Landsat 1-3</th>
-              <th>Landsat 4-5</th>
-              <th>Wavelength (micrometers)</th>
-              <th>Resolution (m)</th>
-            </tr>
-          </thead><tbody>
-            <tr>
-              <td>Band 4</td>
-              <td>Band 1</td>
-              <td>0.5-0.6</td>
-              <td>60 meters</td>
-            </tr>
-            <tr>
-              <td>Band 5</td>
-              <td>Band 2</td>
-              <td>0.6-0.7</td>
-              <td>60 meters</td>
-            </tr>
-            <tr>
-              <td>Band 6</td>
-              <td>Band 3</td>
-              <td>0.7-0.8</td>
-              <td>60 meters</td>
-            </tr>
-            <tr>
-              <td>Band 7</td>
-              <td>Band 4</td>
-              <td>0.8-1.1</td>
-              <td>60 meters</td>
-            </tr>
-          </tbody>
-        </table>
+        <section>
+          <h2 className="display-5">Band Designation</h2>
+          <h3><small className="text-muted">LANDSAT 1-3 & 4-5, Multispectral Scanner (MSS)</small></h3>
+          <div className="table-responsive">
+            <table className="table">
+              <thead className="thead-inverse">
+                <tr>
+                  <th>Landsat 1-3</th>
+                  <th>Landsat 4-5</th>
+                  <th>Wavelength (micrometers)</th>
+                  <th>Resolution (m)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Band 4</td>
+                  <td>Band 1</td>
+                  <td>0.5 - 0.6</td>
+                  <td>60 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 5</td>
+                  <td>Band 2</td>
+                  <td>0.6 - 0.7</td>
+                  <td>60 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 6</td>
+                  <td>Band 3</td>
+                  <td>0.7 - 0.8</td>
+                  <td>60 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 7</td>
+                  <td>Band 4</td>
+                  <td>0.8 - 1.1</td>
+                  <td>60 meters</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-        <h3><small className="text-muted">LANDSAT 4-5, Thematic Mapper (TM)</small></h3>
-        <table className="table">
-          <thead className="thead-inverse">
-            <tr>
-              <th>Band #</th>
-              <th>Wavelength (micrometers)</th>
-              <th>Resolution (m)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Band 1</td>
-              <td>0.45-0.52</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 2</td>
-              <td>0.52-0.60</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 3</td>
-              <td>0.63-0.69</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 4</td>
-              <td>0.76-0.90</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 5</td>
-              <td>1.55-1.75</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 6</td>
-              <td>10.40-12.50</td>
-              <td>120, 60, 30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 7</td>
-              <td>2.08-2.35</td>
-              <td>30 meters</td>
-            </tr>
-          </tbody>
-        </table>
+        <section>
+          <h3><small className="text-muted">LANDSAT 4-5, Thematic Mapper (TM)</small></h3>
+          <div className="table-responsive">
+            <table className="table">
+              <thead className="thead-inverse">
+                <tr>
+                  <th>Band #</th>
+                  <th>Wavelength (micrometers)</th>
+                  <th>Resolution (m)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Band 1</td>
+                  <td>0.45-0.52</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 2</td>
+                  <td>0.52-0.60</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 3</td>
+                  <td>0.63-0.69</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 4</td>
+                  <td>0.76-0.90</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 5</td>
+                  <td>1.55-1.75</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 6</td>
+                  <td>10.40-12.50</td>
+                  <td>120, 60, 30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 7</td>
+                  <td>2.08-2.35</td>
+                  <td>30 meters</td>
+                </tr>
+              </tbody>
+            </table>
 
-        <h3><small className="text-muted">LANDSAT 7, Thematic Mapper Plus (ETM+)</small></h3>
-        <table className="table">
-          <thead className="thead-inverse">
-            <tr>
-              <th>Band #</th>
-              <th>Wavelength(micrometers)</th>
-              <th>Resolution (m)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Band 1</td>
-              <td>0.45-0.52</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 2</td>
-              <td>0.52-0.60</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 3</td>
-              <td>0.63-0.69</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 4</td>
-              <td>0.76-0.90</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 5</td>
-              <td>1.55-1.75</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 6</td>
-              <td>10.40-12.50</td>
-              <td>60, 30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 7</td>
-              <td>2.09-2.35</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 8</td>
-              <td>0.52-0.90</td>
-              <td>30 meters</td>
-            </tr>
-          </tbody>
-        </table>
+          </div>
+        </section>
 
-        <h3>
-          <small className="text-muted">
-            LANDSAT 8 Operational Land Imager (OLI) and Thematic Infrared Sensor (TIRS)
-          </small>
-        </h3>
-        <table className="table">
-          <thead className="thead-inverse">
-            <tr>
-              <th>Band #</th>
-              <th>Designation</th>
-              <th>Wavelength (micrometers)</th>
-              <th>Resolution (m)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Band 1</td>
-              <td> Coastal Aerosol</td>
-              <td>0.43-0.45</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 2</td>
-              <td>Blue</td>
-              <td>0.45-0.51</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 3</td>
-              <td>Green</td>
-              <td>0.53-0.59</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 4</td>
-              <td>Red</td>
-              <td>0.64-0.67</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 5</td>
-              <td>Near Infrared (NIR)</td>
-              <td>0.85-0.88</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 6</td>
-              <td>SWIR 1</td>
-              <td>1.57-1.65</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 7</td>
-              <td>SWIR 2</td>
-              <td>2.11-2.29</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 8</td>
-              <td>Panchromatic</td>
-              <td>0.50-0.68</td>
-              <td>15 meters</td>
-            </tr>
-            <tr>
-              <td>Band 9</td>
-              <td>Cirrus</td>
-              <td>1.36-1.38</td>
-              <td>30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 10</td>
-              <td>Thermal Infrared (TIRS) 1</td>
-              <td>10.60-11.19</td>
-              <td>100, 30 meters</td>
-            </tr>
-            <tr>
-              <td>Band 11</td>
-              <td>Thermal Infrared (TIRS) 2</td>
-              <td>11.50-12.51</td>
-              <td>100, 30 meters</td>
-            </tr>
-          </tbody>
-        </table>
+        <section>
+          <h3><small className="text-muted">LANDSAT 7, Thematic Mapper Plus (ETM+)</small></h3>
+          <div className="table-responsive">
+            <table className="table">
+              <thead className="thead-inverse">
+                <tr>
+                  <th>Band #</th>
+                  <th>Wavelength (micrometers)</th>
+                  <th>Resolution (m)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Band 1</td>
+                  <td>0.45-0.52</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 2</td>
+                  <td>0.52-0.60</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 3</td>
+                  <td>0.63-0.69</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 4</td>
+                  <td>0.76-0.90</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 5</td>
+                  <td>1.55-1.75</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 6</td>
+                  <td>10.40-12.50</td>
+                  <td>60, 30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 7</td>
+                  <td>2.09-2.35</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 8</td>
+                  <td>0.52-0.90</td>
+                  <td>30 meters</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </section>
+
+        <section>
+          <h3>
+            <small className="text-muted">
+              LANDSAT 8 Operational Land Imager (OLI) and Thematic Infrared Sensor (TIRS)
+            </small>
+          </h3>
+          <div className="table-responsive">
+            <table className="table">
+              <thead className="thead-inverse">
+                <tr>
+                  <th>Band #</th>
+                  <th>Designation</th>
+                  <th>Wavelength (micrometers)</th>
+                  <th>Resolution (m)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Band 1</td>
+                  <td>Coastal Aerosol</td>
+                  <td>0.43-0.45</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 2</td>
+                  <td>Blue</td>
+                  <td>0.45-0.51</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 3</td>
+                  <td>Green</td>
+                  <td>0.53-0.59</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 4</td>
+                  <td>Red</td>
+                  <td>0.64-0.67</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 5</td>
+                  <td>Near Infrared (NIR)</td>
+                  <td>0.85-0.88</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 6</td>
+                  <td>SWIR 1</td>
+                  <td>1.57-1.65</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 7</td>
+                  <td>SWIR 2</td>
+                  <td>2.11-2.29</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 8</td>
+                  <td>Panchromatic</td>
+                  <td>0.50-0.68</td>
+                  <td>15 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 9</td>
+                  <td>Cirrus</td>
+                  <td>1.36-1.38</td>
+                  <td>30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 10</td>
+                  <td>Thermal Infrared (TIRS) 1</td>
+                  <td>10.60-11.19</td>
+                  <td>100, 30 meters</td>
+                </tr>
+                <tr>
+                  <td>Band 11</td>
+                  <td>Thermal Infrared (TIRS) 2</td>
+                  <td>11.50-12.51</td>
+                  <td>100, 30 meters</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
       </section>
 
       <section>

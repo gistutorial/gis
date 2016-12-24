@@ -6,7 +6,7 @@ export default () => (
   <div>
     <header className="jumbotron text-xs-center banner">
       <div className="container">
-        <h1 className="display-3">Thermal Bands Conversion</h1>
+        <h1 className="display-4">Thermal Bands Conversion</h1>
       </div>
     </header>
     <div className="container-narrow">
@@ -35,3 +35,8 @@ export default () => (
     </div>
   </div>
 );
+
+/*
+
+
+ */
