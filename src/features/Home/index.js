@@ -69,7 +69,7 @@ export default () => (
       </div>
     </section>
     <section className="container">
-      <h2 className="display-4"><span className="tag tag-pill tag-r">R Programming</span></h2>
+      <h2 className="display-5"><span className="tag tag-pill tag-r">R Programming</span></h2>
       <div className="card-columns">
         <Link className="card card-block text-xs-center card-link card-link-r" to="/tutorials/visualize-data-with-python">
           <h4 className="card-title jumbotron-heading">Learn to visualize your data with R programming.</h4>
@@ -81,7 +81,7 @@ export default () => (
         </Link>
       </div>
     </section>
-    
+
   </div>
 );
 
