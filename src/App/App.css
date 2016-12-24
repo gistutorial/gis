@@ -152,6 +152,16 @@ footer p {
   border-color: #F15A68;
 }
 
+.card-link-r a {
+  color: #53bfe0;
+}
+.card-link-r:hover {
+  border-color: #83c3fc;
+}
+.card-link-r .card-title {
+  color: #53bfe0;
+}
+
 .container-narrow {
   max-width: 46rem;
   margin-left: auto;
@@ -162,6 +172,10 @@ footer p {
 
 .tag-gis {
   background-color: #F15A68;
+}
+
+.tag-r {
+  background-color: #53bfe0;
 }
 /* Customize container */
 @media (min-width: 48em) {

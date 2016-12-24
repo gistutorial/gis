@@ -6,8 +6,8 @@ export default () => (
   <div>
     <header className="jumbotron text-xs-center banner">
       <div className="container">
+        <p><i className="fa fa-globe fa-5x" aria-hidden="true"></i></p>
         <h1 className="display-3">GIS HUB</h1>
-        <h1 className="jumbotron-heading">Geographical Information Science</h1>
         <p className="lead">
           Where Inspiration Meets Discovery.
           GIS HUB aims to help new and aspiring professsionals find their way
@@ -17,7 +17,7 @@ export default () => (
     </header>
 
     <section className="container">
-      <h2 className="display-3"><span className="tag tag-pill tag-gis">GIS</span></h2>
+      <h2 className="display-4"><span className="tag tag-pill tag-gis">GIS</span></h2>
       <div className="card-deck-wrapper">
         <div className="card-deck">
           <Link className="card card-block text-xs-center card-link" to="/tutorials/what-is-gis">
@@ -68,17 +68,31 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="section-footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs">
-            <p><i className="fa fa-globe fa-5x" aria-hidden="true"></i></p>
-          </div>
-          <div className="col-xs">
-            <p>There are many ways to utilize GIS to solve complex real world issues. The over-arching themes that are predominantly found crucial in our current world and the ones that are focused here are: Human Health, Land Cover Change, Natural Disasters, and Environmental Conservation</p>
-          </div>
-        </div>
+    <section className="container">
+      <h2 className="display-4"><span className="tag tag-pill tag-r">R Programming</span></h2>
+      <div className="card-columns">
+        <Link className="card card-block text-xs-center card-link card-link-r" to="/tutorials/visualize-data-with-python">
+          <h4 className="card-title jumbotron-heading">Learn to visualize your data with R programming.</h4>
+          <p className="card-text text-muted">
+            Thermal Infrared Sensor (TIRS) bands detect the thermal radiance and
+            should be converted to TOA spectral radiance in order to convert into
+            brightness temperature in Kelvins (K) using the methods in this tutorial.
+          </p>
+        </Link>
       </div>
     </section>
+    
   </div>
 );
+
+/*
+<div className="row">
+  <div className="col-xs-2">
+    <p><i className="fa fa-globe fa-5x" aria-hidden="true"></i></p>
+  </div>
+  <div className="col-xs-10">
+    <p>There are many ways to utilize GIS to solve complex real world issues. The over-arching themes that are predominantly found crucial in our current world and the ones that are focused here are: Human Health, Land Cover Change, Natural Disasters, and Environmental Conservation</p>
+  </div>
+</div>
+
+ */
