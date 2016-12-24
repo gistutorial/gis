@@ -17,7 +17,7 @@ export default () => (
     </header>
 
     <section className="container">
-      <h2 className="display-3"><span className="tag tag-pill tag-info">GIS</span></h2>
+      <h2 className="display-3"><span className="tag tag-pill tag-gis">GIS</span></h2>
       <div className="card-deck-wrapper">
         <div className="card-deck">
           <Link className="card card-block text-xs-center card-link" to="/tutorials/what-is-gis">

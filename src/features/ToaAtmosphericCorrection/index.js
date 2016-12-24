@@ -65,7 +65,7 @@ export default () => (
         <img src={rad_to_ref_eq} className="img-fluid" alt="" />
         <p>SOURCE: USGS Website</p>
         <p className="lead"><strong>ESUN = Irradiance</strong></p>
-        <table className="table">
+        <table className="table table-hover">
           <thead className="thead-inverse">
             <tr>
               <th>Bands</th>

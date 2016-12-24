@@ -12,7 +12,6 @@ body {
   color: #555;
 }
 
-
 h2 {
   margin-top: 1em;
   padding-top: 1em;
@@ -116,6 +115,7 @@ p {
 }
 
 footer {
+  margin-top: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #293034;
@@ -159,6 +159,10 @@ footer p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.tag-gis {
+  background-color: #F15A68;
 }
 /* Customize container */
 @media (min-width: 48em) {

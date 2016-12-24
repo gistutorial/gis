@@ -29,7 +29,7 @@ export default () => (
           and Science Center (EROS) website</a>.
           Then Click "Earth Explorer" under "Data Discovery".
         </p>
-        <img src={gettingStarted} className="img-fluid" alt="Responsive image" />
+        <img src={gettingStarted} className="img-fluid" alt="data acquisition" />
         <h3><small className="text-muted">Search Criteria</small></h3>
         <p>Once you are in Earth Explorer, add the region of interest and
           date range in the "Search Criteria" (in this case Massingir, Mozambique)
@@ -37,21 +37,21 @@ export default () => (
           Path/Row, coordinates, or select a predefined area if you prefer.
           Then click "Data Sets"
         </p>
-        <img src={search} className="img-fluid" alt="Responsive image" />
+        <img src={search} className="img-fluid" alt="how to search" />
         <h3><small className="text-muted">Data Sets</small></h3>
         <p>For "Data Sets" select Landsat Archive and Landsat 7 ETM+ SLC-on
           (1999-2003). Feel free to select as many data sets as you want,
           depending on the temporal range of your choice.
           Then click "Additional Criteria"
         </p>
-        <img src={dataSets} className="img-fluid" alt="Responsive image" />
+        <img src={dataSets} className="img-fluid" alt="dataset selection" />
         <h3><small className="text-muted">Additional Criteria</small></h3>
         <p>
           In this section, it is helpful to filter through the datasets
           to disregard tiles with heavy cloud cover. In the drop down
           option choose "less than 10%". Then click "Results"
         </p>
-        <img src={additional} className="img-fluid" alt="Responsive image" />
+        <img src={additional} className="img-fluid" alt="additional search" />
         <h3><small className="text-muted">Results</small></h3>
         <p>
           It should provide you with a list of tiles with "entity ID",
@@ -61,7 +61,7 @@ export default () => (
           the GeoTIFF Data Product (usually Level 1) if you are logged
           in, if not follow the last step.
         </p>
-        <img src={result} className="img-fluid" alt="Responsive image" />
+        <img src={result} className="img-fluid" alt="result" />
         <h3><small className="text-muted">Log In</small></h3>
         <p>
           If you are not logged in then you're not done yet! Before you
@@ -71,7 +71,7 @@ export default () => (
           download icon again. This will allow you to download the
           GeoTIFF files, usually a "Level 1" product as seen above.
         </p>
-        <img src={signIn} className="img-fluid" alt="Responsive image" />
+        <img src={signIn} className="img-fluid" alt="signing up" />
       </section>
 
       <section>
@@ -79,7 +79,7 @@ export default () => (
           <h2 className="display-5">Band Designation</h2>
           <h3><small className="text-muted">LANDSAT 1-3 & 4-5, Multispectral Scanner (MSS)</small></h3>
           <div className="table-responsive">
-            <table className="table">
+            <table className="table table-hover">
               <thead className="thead-inverse">
                 <tr>
                   <th>Landsat 1-3</th>
@@ -121,7 +121,7 @@ export default () => (
         <section>
           <h3><small className="text-muted">LANDSAT 4-5, Thematic Mapper (TM)</small></h3>
           <div className="table-responsive">
-            <table className="table">
+            <table className="table table-hover">
               <thead className="thead-inverse">
                 <tr>
                   <th>Band #</th>
@@ -174,7 +174,7 @@ export default () => (
         <section>
           <h3><small className="text-muted">LANDSAT 7, Thematic Mapper Plus (ETM+)</small></h3>
           <div className="table-responsive">
-            <table className="table">
+            <table className="table table-hover">
               <thead className="thead-inverse">
                 <tr>
                   <th>Band #</th>
@@ -236,7 +236,7 @@ export default () => (
             </small>
           </h3>
           <div className="table-responsive">
-            <table className="table">
+            <table className="table table-hover">
               <thead className="thead-inverse">
                 <tr>
                   <th>Band #</th>
@@ -332,7 +332,7 @@ export default () => (
           button under "Processing".
         </p>
         <h3><small className="text-muted">Natural or True Color Composite: BAND 3-2-1</small></h3>
-        <img src={band321} className="img-fluid" alt="Responsive image" />
+        <img src={band321} className="img-fluid" alt="natural or true color composite" />
         <p>
           This is the standard "Natural Color" combination where the image
           is similar to the appearance via the human eye. Therefore,
@@ -341,7 +341,7 @@ export default () => (
           water content and vegetation as well as the other combinations.
         </p>
         <h3><small className="text-muted">False Color Composite: BAND 4-3-2</small></h3>
-        <img src={band432} className="img-fluid" alt="Responsive image" />
+        <img src={band432} className="img-fluid" alt="false color composite band 4 3 2" />
         <p>
           Vegetation appear in shades of red and can distinguish between
           healthy and not healthy vegetation. It can also indicate if the
@@ -350,7 +350,7 @@ export default () => (
           can indicate moisture levels. Dense urban areas reflect in light blue.
         </p>
         <h3><small className="text-muted">False Color Composite: BAND 4-5-3</small></h3>
-        <img src={band453} className="img-fluid" alt="Responsive image" />
+        <img src={band453} className="img-fluid" alt="false color composite band 4 5 3" />
         <p>
           This combination with NIR, MIR, and red bands can help indicate
           moisture/water levels to analyze vegetation and soil condition.
@@ -359,7 +359,7 @@ export default () => (
           such as lakes and rivers.
         </p>
         <h3><small className="text-muted">False Color Composite: BAND 7-4-2</small></h3>
-        <img src={band742} className="img-fluid" alt="Responsive image" />
+        <img src={band742} className="img-fluid" alt="false color composite band 7 4 2" />
         <p>
           This combination looks quite similar to the Natural Color
           Composite, however, can penetrate atmospheric particles with
