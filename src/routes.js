@@ -8,6 +8,7 @@ import ToaAtmosphericCorrection from './features/ToaAtmosphericCorrection';
 import CloudMasking from './features/CloudMasking';
 import ThermalBand from './features/ThermalBand';
 import BasicPlotting from './features/BasicPlotting';
+import ArcpyIntro from './features/ArcpyIntro';
 
 export default(
   <Route path="/" component={App} >
@@ -18,5 +19,6 @@ export default(
     <Route path="tutorials/cloud-masking" component={CloudMasking} />
     <Route path="tutorials/thermal-band-conversion" component={ThermalBand} />
     <Route path="tutorials/visualize-data-with-python" component={BasicPlotting} />
+    <Route path="tutorials/intro-to-arcpy" component={ArcpyIntro} />
   </Route>
 );

@@ -70,13 +70,21 @@ export default () => (
     </section>
     <section className="container">
       <h2 className="display-5"><span className="tag tag-pill tag-p">Python</span></h2>
-      <div className="card-columns">
-        <Link className="card card-block text-xs-center card-link card-link-p" to="/tutorials/visualize-data-with-python">
-          <h4 className="card-title jumbotron-heading">Learn to visualize your data with Python and Seaborn</h4>
-          <p className="card-text text-muted">
-            Seaborn is a great visualization tool that is based similar to matplotlib, but with a more current and attractive design scheme
-          </p>
-        </Link>
+      <div className="card-deck-wrapper">
+        <div className="card-deck">
+          <Link className="card card-block text-xs-center card-link card-link-p" to="/tutorials/visualize-data-with-python">
+            <h4 className="card-title jumbotron-heading">Learn to visualize your data with Python and Seaborn</h4>
+            <p className="card-text text-muted">
+              Seaborn is a great visualization tool that is based similar to matplotlib, but with a more current and attractive design scheme
+            </p>
+          </Link>
+          <Link className="card card-block text-xs-center card-link card-link-p" to="/tutorials/intro-to-arcpy">
+            <h4 className="card-title jumbotron-heading">Introduction to using Arcpy</h4>
+            <p className="card-text text-muted">
+              A beginners guide that will help you explore the properties of the data you are working with including: dataset type, feature type, shape type, projection name, and dataset extent
+            </p>
+          </Link>
+        </div>
       </div>
     </section>
 
