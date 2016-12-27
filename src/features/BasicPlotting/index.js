@@ -1,4 +1,5 @@
 import React from 'react';
+import { PrismCode } from 'react-prism';
 import Gist from '../../common/Gist';
 
 import heatmap from './img/heatmap.png';
@@ -20,14 +21,14 @@ export default () => (
       <section>
         <h2 className="display-5">Create a Heat Map with Seaborn</h2>
         <p>Seaborn is a great visualization tool that is based similar to matplotlib, but with a more current and attractive design scheme. Feel free to visit seaborn to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more!</p>
-        <pre><code className="language-python">{heatmapCode}</code></pre>
+        <pre><PrismCode className="language-python">{heatmapCode}</PrismCode></pre>
         <img src={heatmap} className="img-fluid" alt="" />
       </section>
       <section>
         <h2 className="display-5">JointPlot with Seaborn</h2>
         <p>Create visually appealing histograms and jointplots using the seaborn library! Use the iPython library via Jupyter to physically see the graph inline. Using the Jupyter notebook can help organize input code and output graphs in an instant.</p>
         <p>Feel free to visit seaborn to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more!</p>
-        <pre><code className="language-python">{joinplotCode}</code></pre>
+        <pre><PrismCode className="language-python">{joinplotCode}</PrismCode></pre>
         <img src={joinplot} className="img-fluid" alt="" />
       </section>
       <section>
@@ -35,9 +36,9 @@ export default () => (
         <p>Use the sample dataset from the Seaborn Library to visualize petal length and width, while comparing two specie types. More details for this example can be found, here on the seaborn website! Use the iPython library via Jupyter to physically see the graph inline. Using the Jupyter notebook can help organize input code and output graphs in an instant.</p>
         <p>Feel free to visit seaborn to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more! </p>
         <p>Kernel Density: is a statistical method that smoothes out the data of a random variable in a non-parametric way. Read more about it on the Wiki page, here.</p>
-        <pre><code className="language-python">{kdeClassicCode}</code></pre>
+        <pre><PrismCode className="language-python">{kdeClassicCode}</PrismCode></pre>
         <img src={iris} className="img-fluid" alt="" />
-        <pre><code className="language-python">{kdeMultiPlotCode}</code></pre>
+        <pre><PrismCode className="language-python">{kdeMultiPlotCode}</PrismCode></pre>
         <img src={irisMulti} className="img-fluid" alt="" />
       </section>
       <section>
@@ -45,12 +46,12 @@ export default () => (
         <p>Create visually appealing kernel density estimation plots using the seaborn library! Use the iPython library via Jupyter to physically see the graph inline. Using the Jupyter notebook can help organize input code and output graphs in an instant.</p>
         <p>Feel free to visit seaborn to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more! </p>
         <p>Kernel Density: is a statistical method that smoothes out the data of a random variable in a non-parametric way. Read more about it on the Wiki page, here.</p>
-        <pre><code className="language-python">{kernelDensityCode}</code></pre>
+        <pre><PrismCode className="language-python">{kernelDensityCode}</PrismCode></pre>
         <img src={kde_ploy} className="img-fluid" alt="" />
         <p>Use the bandwidth to adjust the sensitivity to frequency variations. Use FOR LOOP to go through bw 0.5 to 2 in 0.25 intervals.</p>
-        <pre><code className="language-python">{kdeBandwidthCode}</code></pre>
+        <pre><PrismCode className="language-python">{kdeBandwidthCode}</PrismCode></pre>
         <img src={kde_plot2} className="img-fluid" alt="" />
-        <pre><code className="language-python">{kdeVariableCode}</code></pre>
+        <pre><PrismCode className="language-python">{kdeVariableCode}</PrismCode></pre>
         <img src={kde_plot3} className="img-fluid" alt="" />
       </section>
     </div>
@@ -61,8 +62,9 @@ const heatmapCode = `
 import seaborn as sns
 # Define and load the datafile into variable "data" using the seaborn library sns
 data = sns.load_dataset("variable")
-# Use pivot function to get year as x-axis, month as y-axis, and count as the shaded color.
-# Also define how many months there are ie. [:12] = 12 months (January - December)
+# Use pivot function to get year as x-axis, month as y-axis
+# and count as the shaded color. Also define how many months
+# there are ie. [:12] = 12 months (January - December)
 data_rect = data.pivot("month", "year", "count")
 data_rect = data_rect.ix[data.month.iloc[:12]]
 # Call the seaborn library and define color, and line width of the heat map
@@ -101,9 +103,11 @@ import seaborn as sns
 # Use the pre-existing dataset from Seaborn.
 iris = sns.load_dataset('iris')
 
-#Use .head() to show a sample couple of rows to see what the dataset is like. iris.head()
+# Use .head() to show a sample couple of rows to see
+# what the dataset is like. iris.head()
 # DEFINE VARIABLES
-# Define the variables by calling the dataset 'iris' and querying unique species names.
+# Define the variables by calling the dataset 'iris' and querying
+# unique species names.
 # define the two species by querying through the 'iris' dataset
 setosa = iris.query("species == 'setosa'")
 virginica = iris.query("species == 'virginica'")
@@ -116,7 +120,8 @@ sns.kdeplot(iris['sepal_width'],iris['sepal_length'],shade=True,cmap='ocean_r', 
 
 const kdeMultiPlotCode = `
 # MULTI-PLOTTING
-# Now that we can visually see there are two distinct groups in the dataset, lets separate them out.
+# Now that we can visually see there are two distinct groups
+# in the dataset, lets separate them out.
 
 # make sure shade_lowest is set to False
 sns.kdeplot(setosa.sepal_width,setosa.sepal_length,shade=True,cmap='inferno', shade_lowest=False)
@@ -135,7 +140,8 @@ import seaborn as sns
 dataset = randn(45)
 
 # SEABORN KDE
-# Use the kdeplot tool in seaborn to create a kernel density estimation plot in just one step
+# Use the kdeplot tool in seaborn to create a kernel density
+# estimation plot in just one step
 sns.kdeplot(dataset)
 `;
 
@@ -148,7 +154,8 @@ for bw in np.arange(0.5, 2, 0.25):
 `;
 
 const kdeVariableCode = `
-# define variable kernel types with the known options including the commonly used gaussian.
+# define variable kernel types with the known options
+# including the commonly used gaussian.
 kernel_types = ["biw", "cos", "epa", "gau", "tri", "triw"]
 
 # Use label to set legend
