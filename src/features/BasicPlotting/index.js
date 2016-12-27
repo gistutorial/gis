@@ -9,6 +9,8 @@ import irisMulti from './img/kde_irisMulti.JPG';
 import kde_ploy from './img/kde_ploy.JPG';
 import kde_plot2 from './img/kde_plot2.JPG';
 import kde_plot3 from './img/kde_plot3.JPG';
+import histogram from './img/histogram.JPG';
+import histogramTwo from './img/histogram_two.JPG';
 
 export default () => (
   <div>
@@ -20,21 +22,21 @@ export default () => (
     <div className="container-narrow">
       <section>
         <h2 className="display-5">Create a Heat Map with Seaborn</h2>
-        <p>Seaborn is a great visualization tool that is based similar to matplotlib, but with a more current and attractive design scheme. Feel free to visit seaborn to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more!</p>
+        <p>Seaborn is a great visualization tool that is based similar to matplotlib, but with a more current and attractive design scheme. Feel free to visit <a href="http://seaborn.pydata.org/examples/heatmap_annotation.html">seaborn</a> to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more!</p>
         <pre><PrismCode className="language-python">{heatmapCode}</PrismCode></pre>
         <img src={heatmap} className="img-fluid" alt="" />
       </section>
       <section>
         <h2 className="display-5">JointPlot with Seaborn</h2>
         <p>Create visually appealing histograms and jointplots using the seaborn library! Use the iPython library via Jupyter to physically see the graph inline. Using the Jupyter notebook can help organize input code and output graphs in an instant.</p>
-        <p>Feel free to visit seaborn to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more!</p>
+        <p>Feel free to visit <a href="http://seaborn.pydata.org/examples/index.html">seaborn</a> to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more!</p>
         <pre><PrismCode className="language-python">{joinplotCode}</PrismCode></pre>
         <img src={joinplot} className="img-fluid" alt="" />
       </section>
       <section>
         <h2 className="display-5">KDE Classic Example</h2>
         <p>Use the sample dataset from the Seaborn Library to visualize petal length and width, while comparing two specie types. More details for this example can be found, here on the seaborn website! Use the iPython library via Jupyter to physically see the graph inline. Using the Jupyter notebook can help organize input code and output graphs in an instant.</p>
-        <p>Feel free to visit seaborn to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more! </p>
+        <p>Feel free to visit <a href="http://seaborn.pydata.org/examples/index.html">seaborn</a> to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more! </p>
         <p>Kernel Density: is a statistical method that smoothes out the data of a random variable in a non-parametric way. Read more about it on the Wiki page, here.</p>
         <pre><PrismCode className="language-python">{kdeClassicCode}</PrismCode></pre>
         <img src={iris} className="img-fluid" alt="" />
@@ -44,7 +46,7 @@ export default () => (
       <section>
         <h2 className="display-5">Kernel Density Estimation</h2>
         <p>Create visually appealing kernel density estimation plots using the seaborn library! Use the iPython library via Jupyter to physically see the graph inline. Using the Jupyter notebook can help organize input code and output graphs in an instant.</p>
-        <p>Feel free to visit seaborn to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more! </p>
+        <p>Feel free to visit <a href="http://seaborn.pydata.org/examples/index.html">seaborn</a> to browse their latest gallery and to check out some of their tutorials for scatterplots, densityplots, histograms, and more! </p>
         <p>Kernel Density: is a statistical method that smoothes out the data of a random variable in a non-parametric way. Read more about it on the Wiki page, here.</p>
         <pre><PrismCode className="language-python">{kernelDensityCode}</PrismCode></pre>
         <img src={kde_ploy} className="img-fluid" alt="" />
@@ -53,6 +55,23 @@ export default () => (
         <img src={kde_plot2} className="img-fluid" alt="" />
         <pre><PrismCode className="language-python">{kdeVariableCode}</PrismCode></pre>
         <img src={kde_plot3} className="img-fluid" alt="" />
+      </section>
+      <section>
+        <h2 className="display-5">Histogram with Matplotlib</h2>
+        <p>Create basic plots using matplotlib. This tutorial will allow you to plot multiple histograms in one, and provide you with syntax support.</p>
+        <p>Feel free to learn more about histograms from the Wiki page available
+          <a href="https://en.wikipedia.org/wiki/Histogram"> here.</a>
+        </p>
+        <p>Import matplotlib, & numpy libraries</p>
+        <pre><PrismCode className="language-python">{histogramImportCode}</PrismCode></pre>
+        <p>Create datasets: use the randn tool to create a normally distributed dataset.</p>
+        <pre><PrismCode className="language-python">{histogramCreateDatasetCode}</PrismCode></pre>
+        <p>Use plot to create histogram using the matplotlib library.</p>
+        <pre><PrismCode className="language-python">{histogramPlotCode}</PrismCode></pre>
+        <img src={histogram} className="img-fluid" alt="" />
+        <p>Use plot to create multiple histogram in one plot using the matplotlib library</p>
+        <pre><PrismCode className="language-python">{histogramMultipleCode}</PrismCode></pre>
+        <img src={histogramTwo} className="img-fluid" alt="" />
       </section>
     </div>
   </div>
@@ -161,4 +180,40 @@ kernel_types = ["biw", "cos", "epa", "gau", "tri", "triw"]
 # Use label to set legend
 for kern in kernel_types:
 sns.kdeplot(dataset,kernel=kern,label=kern)
+`;
+
+const histogramImportCode = `
+# import data handling libraries
+import numpy as np
+from numpy.random import randn
+
+# Import matplotlib library
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+
+# If using iPython Notebook, lets graph show inline
+%matplotlib inline
+`;
+
+const histogramCreateDatasetCode = `
+dataset1 = randn(100)
+dataset2 = randn(120)
+# note: dataset length does not have to be the same.
+`;
+
+const histogramPlotCode = `
+# bins default is 10, color default is blue
+plt.hist(dataset1,color='skyblue', bins = 20)
+
+# Syntax for titles, labels, grid option
+plt.xlabel('Value of X')
+plt.ylabel('Value of Y')
+plt.title('Histogram of Dataset')
+plt.grid(True)
+`;
+
+const histogramMultipleCode = `
+# use alpha to indicate transparancy
+plt.hist(dataset1,normed=True,color='skyblue',alpha=0.5,bins=20)
+plt.hist(dataset2,normed=True,color = 'green', alpha=0.4,bins=20)
 `;
