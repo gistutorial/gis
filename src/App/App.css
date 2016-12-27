@@ -152,13 +152,13 @@ footer p {
   border-color: #F15A68;
 }
 
-.card-link-r a {
+.card-link-p a {
   color: #53bfe0;
 }
-.card-link-r:hover {
+.card-link-p:hover {
   border-color: #83c3fc;
 }
-.card-link-r .card-title {
+.card-link-p .card-title {
   color: #53bfe0;
 }
 
@@ -174,7 +174,7 @@ footer p {
   background-color: #F15A68;
 }
 
-.tag-r {
+.tag-p {
   background-color: #53bfe0;
 }
 /* Customize container */

@@ -69,14 +69,12 @@ export default () => (
       </div>
     </section>
     <section className="container">
-      <h2 className="display-5"><span className="tag tag-pill tag-r">R Programming</span></h2>
+      <h2 className="display-5"><span className="tag tag-pill tag-p">Python</span></h2>
       <div className="card-columns">
-        <Link className="card card-block text-xs-center card-link card-link-r" to="/tutorials/visualize-data-with-python">
-          <h4 className="card-title jumbotron-heading">Learn to visualize your data with R programming.</h4>
+        <Link className="card card-block text-xs-center card-link card-link-p" to="/tutorials/visualize-data-with-python">
+          <h4 className="card-title jumbotron-heading">Learn to visualize your data with Python and Seaborn</h4>
           <p className="card-text text-muted">
-            Thermal Infrared Sensor (TIRS) bands detect the thermal radiance and
-            should be converted to TOA spectral radiance in order to convert into
-            brightness temperature in Kelvins (K) using the methods in this tutorial.
+            Seaborn is a great visualization tool that is based similar to matplotlib, but with a more current and attractive design scheme
           </p>
         </Link>
       </div>
