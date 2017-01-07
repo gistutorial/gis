@@ -1,6 +1,5 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
-import Gist from '../../common/Gist';
 
 import heatmap from './img/heatmap.png';
 import joinplot from './img/jointplot.JPG';
