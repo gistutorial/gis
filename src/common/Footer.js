@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => (
   <footer className="text-muted">
-    <div className="container">
+    <div className="container-fluid">
       <p className="float-xs-right">
       </p>
       <p>GIS HUB aims to help new and aspiring
