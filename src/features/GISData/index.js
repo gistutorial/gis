@@ -15,7 +15,7 @@ export default () => (
   <div>
     <header className="jumbotron text-xs-center banner">
       <div className="container">
-        <h1 className="jumbotron-heading">Data acquisition with USGS. Band Designation. Band Combination</h1>
+        <h1 className="jumbotron-heading">Remotely Sensed Data: Band Designation & Combinations</h1>
       </div>
     </header>
 

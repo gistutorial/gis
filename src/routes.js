@@ -10,6 +10,7 @@ import ThermalBand from './features/ThermalBand';
 import BasicPlotting from './features/BasicPlotting';
 import ArcpyIntro from './features/ArcpyIntro';
 import About from './features/About';
+import QgisIntro from './features/QgisIntro';
 
 export default(
   <Route path="/" component={App} >
@@ -22,5 +23,6 @@ export default(
     <Route path="tutorials/visualize-data-with-python" component={BasicPlotting} />
     <Route path="tutorials/intro-to-arcpy" component={ArcpyIntro} />
     <Route path="about" component={About} />
+    <Route path="tutorials/intro-to-qgis" component={QgisIntro} />
   </Route>
 );
