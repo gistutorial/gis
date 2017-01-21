@@ -177,6 +177,23 @@ footer p {
 .tag-p {
   background-color: #53bfe0;
 }
+
+.tag-raster{
+  background-color: #999999
+}
+
+.tag-vector{
+  background-color: #666633
+}
+
+.gray-cardblock{
+  background-color: #ededed
+}
+
+.top-padding{
+  margin-top: 5em
+}
+
 /* Customize container */
 @media (min-width: 48em) {
   .container-narrow {
