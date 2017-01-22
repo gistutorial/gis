@@ -209,7 +209,7 @@ export default () => (
           </figure>
 
       <h2 className="display-5">Final Storm Event Heatmap</h2>
-      <p>
+      <p> 
         <b>The final product should be a representation of spatial density of storm events in the year
         2016.</b> It is evident from the map that the majority of storms occured in the <b>East and Mid-Eastern</b>
         part of the U.S. This is pretty consistent from what we found with the choropleth in the previous section.
