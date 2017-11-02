@@ -1,6 +1,5 @@
 import React from 'react';
 import { PrismCode } from 'react-prism';
-
 import buffer from './img/buffers.png';
 
 export default () => (

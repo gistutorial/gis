@@ -8,3 +8,7 @@ git push
 ```
 npm run deploy
 ```
+### How to update local host
+```
+npm start
+```

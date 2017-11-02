@@ -18,6 +18,30 @@ export default () => (
     <section className="container-fluid">
       <h2 className="display-4"><span className="badge badge-pill tag-gis">Tutorials</span></h2>
       <div className="card-columns">
+      <Link className="card text-center card-link" to="/tutorials/data-r">
+          <div className="card-block">
+            <h4 className="card-title jumbotron-heading">Obtaining Spatial Datasets w/ R </h4>
+            <p className="card-text text-muted">
+            Rather than manually downloading data, try using the various API's and packages available 
+            through R! This will allow for less memory space and easier accessibility when working with 
+            products via MODIS, Landsat, and even US Census Data. 
+            </p>
+            <p><span className="badge badge-pill tag-raster">Raster</span><span className="badge badge-pill tag-data">Data</span><span className="badge badge-pill tag-remotesensing">Remote Sensing</span> <span className="badge badge-pill tag-R">R</span>
+            </p>
+          </div>
+        </Link>
+        <Link className="card text-center card-link" to="/tutorials/spatial-r">
+          <div className="card-block">
+            <h4 className="card-title jumbotron-heading">Spatial Analysis w/ R </h4>
+            <p className="card-text text-muted">
+            Get a glimpse into what R can do with spatial data. Explore introductory techniques in R
+            needed to tackle spatial analysis includng: reading raster files, changing projection,
+            stacking bands, and much more!
+            </p>
+            <p><span className="badge badge-pill tag-raster">Raster</span><span className="badge badge-pill tag-remotesensing">Remote Sensing</span> <span className="badge badge-pill tag-R">R</span>
+            </p>
+          </div>
+        </Link>
         <Link className="card text-center card-link" to="/tutorials/qgis-heat-map">
           <div className="card-block">
             <h4 className="card-title jumbotron-heading">QGIS: Temportal Analysis w/ Python </h4>
@@ -25,7 +49,7 @@ export default () => (
             Learn how to perform a temporal analysis on the storm event dataset using Python. This
             tutorial will go through some ways to auto-acquire data, to create a time-series.
             </p>
-            <p><span className="badge badge-pill tag-gis">GIS</span> <span className="badge badge-pill tag-vector">Vector</span> <span className="badge badge-pill tag-p">Python</span>
+            <p><span className="badge badge-pill tag-qgis">QGIS</span> <span className="badge badge-pill tag-vector">Vector</span> <span className="badge badge-pill tag-p">Python</span>
             </p>
           </div>
         </Link>
@@ -37,7 +61,7 @@ export default () => (
             available in QGIS. This tutorial will identify datasets and go through step-by-step instructions
             on how to best go about creating a choropleth map and a heatmap. See you there!
             </p>
-            <p><span className="badge badge-pill tag-gis">GIS</span> <span className="badge badge-pill tag-vector">Vector</span></p>
+            <p><span className="badge badge-pill tag-qgis">QGIS</span> <span className="badge badge-pill tag-vector">Vector</span></p>
           </div>
         </Link>
         <Link className="card text-center card-link" to="/tutorials/what-is-gis">
@@ -60,7 +84,7 @@ export default () => (
               on band designation and band combinations are explained to better understand
               how to handle raster data.
             </p>
-            <p><span className="badge badge-pill tag-gis">GIS</span> <span className="badge badge-pill tag-raster">Raster</span></p>
+            <p><span className="badge badge-pill tag-gis">GIS</span> <span className="badge badge-pill tag-raster">Raster</span><span className="badge badge-pill tag-data">Data</span><span className="badge badge-pill tag-remotesensing">Remote Sensing</span></p>
           </div>
         </Link>
         <Link className="card text-center card-link" to="/tutorials/toa-atmospheric-correction">
@@ -71,7 +95,7 @@ export default () => (
               algorithims and raster calculation to undergo Top Of Atmosphere correction. This will allow the imagery
               to account for light scattering, sensor errors, and increase the overall quality.
             </p>
-            <p><span className="badge badge-pill tag-gis">GIS</span> <span className="badge badge-pill tag-raster">Raster</span></p>
+            <p><span className="badge badge-pill tag-arcgis">ArcGIS</span> <span className="badge badge-pill tag-raster">Raster</span><span className="badge badge-pill tag-remotesensing">Remote Sensing</span></p>
           </div>
         </Link>
         <Link className="card text-center card-link" to="/tutorials/cloud-masking">
@@ -84,7 +108,7 @@ export default () => (
               suggested after completing the atmospheric correction (converting
               DN to Radiance to Reflectance), with either the TOA or COST methods.
             </p>
-            <p><span className="badge badge-pill tag-gis">GIS</span> <span className="badge badge-pill tag-raster">Raster</span></p>
+            <p><span className="badge badge-pill tag-arcgis">ArcGIS</span> <span className="badge badge-pill tag-raster">Raster</span><span className="badge badge-pill tag-remotesensing">Remote Sensing</span></p>
           </div>
         </Link>
         <Link className="card text-center card-link" to="/tutorials/thermal-band-conversion">
@@ -95,7 +119,7 @@ export default () => (
               should be converted to TOA spectral radiance in order to convert into
               brightness temperature in Kelvins (K) using the methods in this tutorial.
             </p>
-            <p><span className="badge badge-pill tag-gis">GIS</span> <span className="badge badge-pill tag-raster">Raster</span></p>
+            <p><span className="badge badge-pill tag-arcgis">ArcGIS</span> <span className="badge badge-pill tag-raster">Raster</span><span className="badge badge-pill tag-remotesensing">Remote Sensing</span></p>
           </div>
         </Link>
         <Link className="card text-center card-link" to="/tutorials/visualize-data-with-python">
@@ -113,7 +137,7 @@ export default () => (
             <p className="card-text text-muted">
               A beginners guide that will help you explore the properties of the data you are working with including: dataset type, feature type, shape type, projection name, and dataset extent
             </p>
-            <p><span className="badge badge-pill tag-gis">GIS</span> <span className="badge badge-pill tag-p">Python</span></p>
+            <p><span className="badge badge-pill tag-arcgis">ArcGIS</span> <span className="badge badge-pill tag-p">Python</span></p>
           </div>
         </Link>
       </div>

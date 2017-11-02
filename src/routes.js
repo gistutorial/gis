@@ -11,6 +11,8 @@ import BasicPlotting from './features/BasicPlotting';
 import ArcpyIntro from './features/ArcpyIntro';
 import About from './features/About';
 import QgisIntro from './features/QgisIntro';
+import SpatialR from './features/SpatialR';
+import DataR from './features/DataR';
 
 
 export default(
@@ -25,5 +27,7 @@ export default(
     <Route path="tutorials/intro-to-arcpy" component={ArcpyIntro} />
     <Route path="about" component={About} />
     <Route path="tutorials/intro-to-qgis" component={QgisIntro} />
+    <Route path="tutorials/spatial-r" component={SpatialR} />
+    <Route path="tutorials/data-r" component={DataR} />
   </Route>
 );

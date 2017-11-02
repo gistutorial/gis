@@ -106,6 +106,10 @@ p {
   background-color: #f7f7f7;
 }
 
+.spacing {
+  padding-top: 2rem;
+}
+
 .card{
   border-radius: 0;
 }
@@ -143,6 +147,11 @@ footer p {
   font-weight: 300;
   padding-top: 0;
 }
+.subsection {
+  font-size: 2rem;
+  font-weight: 300;
+  padding-top: 40px;
+}
 
 .card-link+.card-link {
   margin-left: 0;
@@ -170,8 +179,49 @@ footer p {
   padding-right: 15px;
 }
 
+.imgContainer{
+  max-width: 50%;
+}
+
+.imgHolder {
+  position: relative;
+}
+.imgHolder span {
+  position: absolute;
+  right: 70px;
+}
+
+.imgHolder_light {
+  position: relative;
+}
+.imgHolder_light span {
+  position: absolute;
+  right: 68px;
+  color: rgb(250, 248, 248);
+}
+
 .tag-gis {
   background-color: #F15A68;
+}
+
+.tag-qgis {
+  background-color: #5378e0;
+}
+
+.tag-arcgis {
+  background-color: #e07553;
+}
+
+.tag-R {
+  background-color: #bfe053;
+}
+
+.tag-data {
+  background-color: #06bea0;
+}
+
+.tag-remotesensing {
+  background-color: #cc74e6;
 }
 
 .tag-p {
