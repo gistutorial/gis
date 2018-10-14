@@ -13,6 +13,10 @@ import About from './features/About';
 import QgisIntro from './features/QgisIntro';
 import SpatialR from './features/SpatialR';
 import DataR from './features/DataR';
+import USDataR from './features/USDataR';
+import BasicPlottingR from './features/BasicPlottingR';
+import LeafletR from './features/LeafletR';
+import InteractivePlottingR from './features/InteractivePlottingR';
 
 
 export default(
@@ -29,5 +33,9 @@ export default(
     <Route path="tutorials/intro-to-qgis" component={QgisIntro} />
     <Route path="tutorials/spatial-r" component={SpatialR} />
     <Route path="tutorials/data-r" component={DataR} />
+    <Route path="tutorials/us-data-r" component={USDataR} />
+    <Route path="tutorials/visualize-data-with-r" component={BasicPlottingR} />
+    <Route path="tutorials/interactive-leaflet-r" component={LeafletR} />
+    <Route path="tutorials/interactive-plotting-r" component={InteractivePlottingR} />
   </Route>
 );

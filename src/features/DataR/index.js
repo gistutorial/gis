@@ -5,7 +5,6 @@ import brasilshp from './img/brasilshp.png';
 import dotchart from './img/dotchart.png';
 import pop_gdp from './img/pop_gdp.png';
 import pop_bio_world from './img/Pop_bio_world.png';
-import county_bounds from './img/CountyBounds.png';
 
 export default () => (
     <div>
@@ -26,11 +25,6 @@ export default () => (
         There are also vector data such as country boundary maps offered by 
         <a href="https://cran.r-project.org/web/packages/rworldmap/rworldmap.pdf"> rworldmap</a> and/or 
         <a href="http://www.gadm.org/"> GADM</a>. 
-        </p>
-        <p>
-        When looking at population counts, address information, and/or legal boundaries within the US 
-        the Tiger or Topologically Integrated Geographic Encoding and Referencing datasets obtained 
-        from the US Census Bureau. 
         </p>
        </section>
 
@@ -153,55 +147,7 @@ export default () => (
         <pre><PrismCode className="language-python">{rworldmap3}</PrismCode></pre>
         </section>  
 
-        <section>
-        <h2 className="display-5">U.S. Census Data</h2>
-        <p>
-        <a href ="https://cran.r-project.org/web/packages/acs/acs.pdf"> acs</a>
-        To access the spatial boundaries, we must specify the FIPS code pertaining to each county.
-        The specific FIPS code for counties and states can be searched through this .xlsx file provided by the US Census site: 
-        <a href="https://www.census.gov/geographies/reference-files/2016/demo/popest/2016-fips.html"> FIPS Code</a>.
-        For this tutorial, we will be working with the FIPS codes in the Bay Area:
-        </p>
-        <table className="table table-hover">
-              <thead className="thead-inverse">
-              <tr>
-                <th>County Name</th>
-                <th>FIPS Code</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>Alameda</td>
-                <td>01</td>
-              </tr>
-              <tr>
-                <td>San Francisco</td>
-                <td>75</td>
-              </tr>
-              <tr>
-                <td>Marin</td>
-                <td>41</td>
-              </tr>
-              <tr>
-                <td>San Mateo</td>
-                <td>81</td>
-              </tr>
-              <tr>
-                <td>Santa Cruz</td>
-                <td>87</td>
-              </tr>
-              <tr>
-                <td>Santa Clara</td>
-                <td>85</td>
-              </tr>
-              </tbody>
-              </table>
-        <pre><PrismCode className="language-python">{censusdata}</PrismCode></pre>
-        <figure className="figure">
-            <img src={county_bounds} className="figure-img img-fluid" alt="" />
-        </figure> 
-        </section>
-    </div>
+     </div>
     </div>
 
 );
@@ -266,8 +212,7 @@ MeanEnvHealth <- country2Region(inFile=countryExData
 dotchart(sort(sternEnvHealth[,1]), xlab='Environmental Health', bg='lightblue')
 `;
 
-const rworldmap2=`
-# Read sample data into a dataframe
+const rworldmap2=`# Read sample data into a dataframe
 dF <- getMap()@data
 
 # Call functionality mapBars()
@@ -287,14 +232,4 @@ sPDF <- joinCountryData2Map(countryExData,joinCode = "ISO3"
 # Biodiversity ratings are categorized into 4 ranges using quantile method 
 mapBubbles(sPDF, nameZSize="POP_EST",nameZColour="BIODIVERSITY"
            ,colourPalette=adjustcolor(palette(), alpha.f = 0.5),numCats=4,catMethod="quantiles")
-`;
-
-const censusdata=`# Load libraries
-library(tigris)
-library(acs)
-library(stringr) 
-
-counties <- c(1, 75, 41, 81, 87, 85)
-tracts <- tracts(state = 'CA', county = c(1, 75, 41, 81, 87, 85), cb=TRUE)
-plot(tracts)
 `;

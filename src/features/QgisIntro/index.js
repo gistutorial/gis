@@ -26,10 +26,10 @@ export default () => (
       <section>
         <h2 className="display-5">Intro: Data Acquisition</h2>
         <p>
-          To start spatially visualizing data, we first need to acquire a dataset from a preferablly
-          credible source. In today's excercise, we will use a data compiled from <b>NOAA's National Weather
-          Services</b> avaiable <a href="https://www.ncdc.noaa.gov/stormevents/ftp.jsp"> here </a>that reports
-          storm events across the nation from January 1950 to September 2016.
+          To start spatially visualizing data, we first need to acquire datasets from a preferablly
+          credible source. In today's excercise, we will use a dataset compiled from <b>NOAA's National Weather
+          Services</b> available <a href="https://www.ncdc.noaa.gov/stormevents/ftp.jsp"> here</a>. The dataset 
+          reports storm events across the nation from January 1950 to September 2016.
         </p>
         <p>
           There is the option to download the available dataset via FTP or HTTP servers. We will work
